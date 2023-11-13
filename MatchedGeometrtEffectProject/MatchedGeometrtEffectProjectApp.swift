@@ -1,10 +1,3 @@
-//
-//  MatchedGeometrtEffectProjectApp.swift
-//  MatchedGeometrtEffectProject
-//
-//  Created by Etienne on 12/11/2023.
-//
-
 import SwiftUI
 
 @main

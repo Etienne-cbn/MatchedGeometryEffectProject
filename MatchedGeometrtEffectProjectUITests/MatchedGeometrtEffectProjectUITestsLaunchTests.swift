@@ -1,10 +1,3 @@
-//
-//  MatchedGeometrtEffectProjectUITestsLaunchTests.swift
-//  MatchedGeometrtEffectProjectUITests
-//
-//  Created by Etienne on 12/11/2023.
-//
-
 import XCTest
 
 final class MatchedGeometrtEffectProjectUITestsLaunchTests: XCTestCase {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F0802A52B011DD2002EC6B7 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0802A42B011DD2002EC6B7 /* CellView.swift */; };
+		8F0802A72B0228F6002EC6B7 /* ExempleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0802A62B0228F6002EC6B7 /* ExempleView.swift */; };
 		8FF7BEB42B0046FC00330B76 /* MatchedGeometrtEffectProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF7BEB32B0046FC00330B76 /* MatchedGeometrtEffectProjectApp.swift */; };
 		8FF7BEB62B0046FC00330B76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF7BEB52B0046FC00330B76 /* ContentView.swift */; };
 		8FF7BEB82B0046FD00330B76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF7BEB72B0046FD00330B76 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		8F0802A42B011DD2002EC6B7 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		8F0802A62B0228F6002EC6B7 /* ExempleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempleView.swift; sourceTree = "<group>"; };
 		8FF7BEB02B0046FC00330B76 /* MatchedGeometrtEffectProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchedGeometrtEffectProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF7BEB32B0046FC00330B76 /* MatchedGeometrtEffectProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometrtEffectProjectApp.swift; sourceTree = "<group>"; };
 		8FF7BEB52B0046FC00330B76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				8FF7BEB72B0046FD00330B76 /* Assets.xcassets */,
 				8FF7BEB92B0046FD00330B76 /* Preview Content */,
 				8F0802A42B011DD2002EC6B7 /* CellView.swift */,
+				8F0802A62B0228F6002EC6B7 /* ExempleView.swift */,
 			);
 			path = MatchedGeometrtEffectProject;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				8F0802A52B011DD2002EC6B7 /* CellView.swift in Sources */,
 				8FF7BEB62B0046FC00330B76 /* ContentView.swift in Sources */,
 				8FF7BEB42B0046FC00330B76 /* MatchedGeometrtEffectProjectApp.swift in Sources */,
+				8F0802A72B0228F6002EC6B7 /* ExempleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

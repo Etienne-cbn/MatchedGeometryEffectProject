@@ -1,10 +1,3 @@
-//
-//  MatchedGeometrtEffectProjectTests.swift
-//  MatchedGeometrtEffectProjectTests
-//
-//  Created by Etienne on 12/11/2023.
-//
-
 import XCTest
 @testable import MatchedGeometrtEffectProject
 

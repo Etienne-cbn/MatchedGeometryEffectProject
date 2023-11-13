@@ -1,10 +1,3 @@
-//
-//  ExempleView.swift
-//  MatchedGeometrtEffectProject
-//
-//  Created by Etienne on 12/11/2023.
-//
-
 import SwiftUI
 
 struct CellView: View {
@@ -32,12 +25,13 @@ struct CellView: View {
             }
         }.onTapGesture {
             withAnimation(.easeInOut) {
-                if let seletedIndex = self.seletedIndex, seletedIndex != self.index {
+                if let seletedIndex = self.seletedIndex {
+                    self.seletedIndex = nil
+                    self.showDetails = false
+                } else {
                     self.seletedIndex = self.index
-                    return
+                    self.showDetails = true
                 }
-                self.showDetails.toggle()
-                self.seletedIndex = self.index
             }
         }
         .clipped()
@@ -48,7 +42,7 @@ struct CellView: View {
         ZStack {
             
             Rectangle()
-                .fill(Color.green)
+                .fill(Color.white)
             
             
             ZStack {
@@ -56,11 +50,14 @@ struct CellView: View {
                     .fill(Color.clear)
                     .background(
                         HStack(spacing: .zero) {
-                            Rectangle()
-                                .fill(Color.yellow)
+                            Image("image\(self.index)")
+                                .resizable()
+                                .scaledToFill()
+                                .cornerRadius(8)
                                 .matchedGeometryEffect(id: NamespaceIDs.profilePic, in: self.nspace, anchor: .topLeading)
                                 .frame(width: 100, height: 100)
                                 .padding()
+                                .clipped()
                             
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(self.title)
@@ -85,16 +82,18 @@ struct CellView: View {
     var bigView: some View {
         ZStack {
             Rectangle()
-                .fill(Color.green)
+                .fill(Color.white)
                 .zIndex(1)
             
             ZStack {
                 VStack {
-                    Rectangle()
-                        .fill(Color.yellow)
+                    Image("image\(self.index)")
+                        .resizable()
+                        .scaledToFill()
                         .matchedGeometryEffect(id: NamespaceIDs.profilePic, in: self.nspace, anchor: .topLeading)
                         .frame(height: 200)
                         .padding(0)
+                        .clipped()
                     
                     
                     VStack(alignment: .leading, spacing: 4) {
@@ -119,9 +118,9 @@ struct CellView: View {
     }
 }
 
-struct ExempleView_Previews: PreviewProvider {
+struct CellView_Previews: PreviewProvider {
     static var previews: some View {
-        ExempleView(
+        CellView(
             index: 0,
             showDetails: .constant(false),
             seletedIndex: .constant(0)
